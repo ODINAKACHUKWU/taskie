@@ -1,0 +1,58 @@
+@import "../base.scss";
+
+form > div {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+  & > input {
+    width: 100%;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #6c65ed;
+    padding: 20px 0 10px;
+    font-size: 14px;
+
+    &::placeholder {
+      opacity: 0.7;
+    }
+
+    &::-webkit-input-placeholder {
+      /* Edge */
+      opacity: 0.7;
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      opacity: 0.7;
+    }
+
+    &:focus {
+      border-width: 0 0 3px;
+      border-color: #6c65ed;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-top: 50px;
+  }
+
+  & > button {
+    color: #ffffff;
+    padding: 12px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c65ed;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
