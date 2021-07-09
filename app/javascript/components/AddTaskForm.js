@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 
-// Styles
-import "../../assets/stylesheets/components/add-task-form.scss";
-
 function AddTaskForm() {
   const history = useHistory();
   const [title, setTitle] = useState("");

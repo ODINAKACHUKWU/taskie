@@ -37,7 +37,7 @@ function Task({ task }) {
       </div>
       <div className="update-action">
         {currentTask.completed ? (
-          <span className="time">{format(task?.updated_at)}</span>
+          <span className="time">{format(currentTask?.updated_at)}</span>
         ) : (
           <input type="checkbox" checked={isChecked} onChange={handleChange} />
         )}

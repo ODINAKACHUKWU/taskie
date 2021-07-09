@@ -5,9 +5,6 @@ import { GoPlus } from "react-icons/go";
 import Dashboard from "../components/Dashboard";
 import TaskListDisplay from "../components/TaskListDisplay";
 
-// Styles
-import "../../assets/stylesheets/pages/task-list.scss";
-
 function TaskList() {
   const history = useHistory();
   const [tasks, setTasks] = useState([]);

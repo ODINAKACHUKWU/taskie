@@ -1,9 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// Styles
-import "../../assets/stylesheets/components/header.scss";
-
 function Header({ title, action }) {
   return (
     <div className="header-container">

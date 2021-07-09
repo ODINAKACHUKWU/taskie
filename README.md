@@ -2,14 +2,11 @@
 
 A simple task management application.
 
-<br />
-
 ### Features
 
 - Tasklist - a page that displays all tasks.
 - Taskadd - a page to add a task to the list.
-
-<br />
+- Task completion - a checkbox to mark completed task.
 
 # Table of Contents
 
@@ -25,44 +22,37 @@ Taskie is a React on Rails 6 web application.
 ## Technology Stack
 
 - [ReactJS](https://reactjs.org/)
-- [Ruby on Rails](https://rubyonrails.org/)
+- [Ruby 2.5.1](https://www.ruby-lang.org/en/)
+- [Ruby on Rails 6.0.3](https://rubyonrails.org/)
+- [Bundler 2.1.4](https://bundler.io/)
+- [SQLite database](https://www.sqlite.org/index.html)
 
 ## Setup and Installation
 
-<!-- Remember to remove the imported styles -->
+#### Prerequisites
 
-<!-- Run bundle install -->
-<!-- Run rails db:migrate -->
-<!-- Run rails db:seed -->
-<!-- Run rails s -->
+You will need to install `Ruby`, `Rails` and `Node JS` on your machine.
 
-<!-- Will do better -->
-<!-- Truncate description on display -->
-<!-- Style avatar to be hexagonal -->
-<!-- Frontend and backend data validation -->
-<!-- Use styled components -->
+#### Setup
 
-1. Install Node JS on your machine.
+1. Clone the repository using the command: `$ git clone git@github.com:ODINAKACHUKWU/taskie.git`.
 
-2. Clone the repository using the command: `$ git clone https://<username>@bitbucket.org/cardinalstone-consolidated/cardinalstone-frontend-app.git`.
+2. Change directory into the root of the project directory.
 
-3. Change directory into the root of the project directory.
+3. Run `bundle install` on the terminal to install project dependecies.
 
-4. Run `npm install` on the terminal to install project dependecies.
+4. Run `rails db:migrate` on the terminal to create database table(s).
+
+5. Run `rails db:seed` on the terminal to seed the database.
 
 ## Usage
 
-After successfully setting up the project on your machine and installing project's dependencies, start the application. Different build environments are:
+After successfully setting up the project on your machine and installing project's dependencies:
 
-### Production
+1. start the application using the command: `$ rails s`.
 
-- Run the command to create an optimized build `$ npm run build`
-- Start the server with the command `$ npm start`
+2. Visit the site on your browser using `localhost:3000`. You should see the list of tasks added to the database on seeding.
 
-### Development
+3. To add a task, click the `+` icon on the header. Fill in the required title, desription (optional), and avatar url (optional); and click the add button.
 
-- Start the development sever with the command `$ npm run dev`
-
-1. Visit the site on your browser using `localhost:3000`
-
-2. To login, request for a test account's `userID` and `password` from the dev team.
+4. To mark a task as completed, click the checkbox on each task. You should see the time of completion displayed after the checkbox disappears.
