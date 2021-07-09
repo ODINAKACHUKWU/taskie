@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 // Styles
 import "../../assets/stylesheets/components/add-task-form.scss";
@@ -12,8 +13,10 @@ function AddTaskForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("====== payload", { title, description, avatarUrl });
-    history.push("/");
+    axios
+      .post("/api/v1/tasks", { title, description, avatarUrl })
+      .then((res) => history.push("/"))
+      .catch((err) => console.log(err));
   };
 
   return (

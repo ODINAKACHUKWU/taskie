@@ -29,10 +29,18 @@ Taskie is a React on Rails 6 web application.
 
 ## Setup and Installation
 
+<!-- Remember to remove the imported styles -->
+
 <!-- Run bundle install -->
 <!-- Run rails db:migrate -->
 <!-- Run rails db:seed -->
 <!-- Run rails s -->
+
+<!-- Will do better -->
+<!-- Truncate description on display -->
+<!-- Style avatar to be hexagonal -->
+<!-- Frontend and backend data validation -->
+<!-- Use styled components -->
 
 1. Install Node JS on your machine.
 

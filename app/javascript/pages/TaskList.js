@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 import { GoPlus } from "react-icons/go";
 import Dashboard from "../components/Dashboard";
-import { tasks } from "../data/tasks";
+import TaskListDisplay from "../components/TaskListDisplay";
 
 // Styles
 import "../../assets/stylesheets/pages/task-list.scss";
-import TaskListDisplay from "../components/TaskListDisplay";
 
 function TaskList() {
   const history = useHistory();
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("/api/v1/tasks")
+      .then((res) => {
+        setTasks(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, [tasks.length]);
 
   const handleClick = () => {
     history.push("/add-task");
@@ -17,7 +27,11 @@ function TaskList() {
 
   return (
     <Dashboard title="Tasks" action={<GoPlus onClick={handleClick} />}>
-      <TaskListDisplay taskList={tasks} />
+      {tasks.length === 0 ? (
+        <div>No task created yet</div>
+      ) : (
+        <TaskListDisplay taskList={tasks} />
+      )}
     </Dashboard>
   );
 }
