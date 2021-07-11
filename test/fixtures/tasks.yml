@@ -11,3 +11,8 @@ two:
   description: MyText
   avatar_url: MyText
   completed: false
+
+valid:
+  title: Test task
+  description: Task description
+  avatar_url: https://s.gravatar.com/avatar/d4c74594d841139328695756648b6bd6

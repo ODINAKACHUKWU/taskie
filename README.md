@@ -13,6 +13,7 @@ A simple task management application.
 - [Getting Started](#Getting-Started "Goto Getting-Started")
 - [Technology Stack](#Technology-Stack "Goto Technology-Stack")
 - [Setup and Installation](#Setup-and-Installation "Goto Setup-and-Installation")
+- [Testing](#Testing "Testing")
 - [Usage](#Usage "Goto Usage")
 
 ## Getting Started
@@ -44,6 +45,14 @@ You will need to install `Ruby`, `Rails` and `Node JS` on your machine.
 4. Run `rails db:migrate` on the terminal to create database table(s).
 
 5. Run `rails db:seed` on the terminal to seed the database.
+
+## Testing
+
+Use the command below to run test:
+
+```sh
+rails test
+```
 
 ## Usage
 
