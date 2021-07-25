@@ -40,7 +40,7 @@ You will need to install `Ruby`, `Rails` and `Node JS` on your machine.
 
 2. Change directory into the root of the project directory.
 
-3. Run `bundle install` on the terminal to install project dependecies.
+3. Run `bundle install` and `yarn install` on the terminal to install project dependecies.
 
 4. Run `rails db:migrate` on the terminal to create database table(s).
 

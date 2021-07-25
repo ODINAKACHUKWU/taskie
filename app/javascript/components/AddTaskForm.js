@@ -10,6 +10,8 @@ function AddTaskForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const token = document.querySelector("[name=csrf-token]").content;
+    axios.defaults.headers.common["X-CSRF-TOKEN"] = token;
     axios
       .post("/api/v1/tasks", { title, description, avatarUrl })
       .then((res) => history.push("/"))
