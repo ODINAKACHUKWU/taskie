@@ -18,6 +18,30 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@babel/preset-env": "^7.14.8",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "babel-jest": "^27.0.6",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "jest": "^27.0.6",
+    "jsdom": "16.6.0",
+    "jsdom-global": "3.0.2",
+    "react-test-renderer": "^17.0.2",
     "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "test": "jest -o --watch"
+  },
+  "jest": {
+    "roots": [
+      "spec/javascript"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "app/javascript"
+    ],
+    "setupFilesAfterEnv": [
+      "./spec/javascript/setupTests.js"
+    ]
   }
 }

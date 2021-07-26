@@ -48,10 +48,20 @@ You will need to install `Ruby`, `Rails` and `Node JS` on your machine.
 
 ## Testing
 
-Use the command below to run test:
+#### Backend App - Minitest
+
+Use the command below to run the test:
 
 ```sh
 rails test
+```
+
+#### Frontend App - Enzyme & Jest
+
+Use the command below to run the test:
+
+```sh
+yarn test
 ```
 
 ## Usage

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot TaskListDisplay snapshot 1`] = `
+<Fragment>
+  <Task
+    key="task-1-1"
+    task={
+      Object {
+        "avatar_url": "",
+        "description": "This is task 1",
+        "slug": "task-1-1",
+        "title": "Task 1",
+      }
+    }
+  />
+  <Task
+    key="task-2-2"
+    task={
+      Object {
+        "avatar_url": "",
+        "description": "This is task 2",
+        "slug": "task-2-2",
+        "title": "Task 2",
+      }
+    }
+  />
+</Fragment>
+`;

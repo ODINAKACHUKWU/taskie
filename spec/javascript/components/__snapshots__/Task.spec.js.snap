@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot Task snapshot 1`] = `
+<div
+  className="task-card"
+>
+  <div
+    className="avatar-section"
+  >
+    <FaUserCircle
+      className="user-icon"
+    />
+  </div>
+  <div
+    className="task-details"
+  >
+    <div
+      className="task-title"
+    >
+      Task 1
+    </div>
+    <div
+      className="task-description"
+    >
+      This is task 1
+    </div>
+  </div>
+  <div
+    className="update-action"
+  >
+    <input
+      checked={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+  </div>
+</div>
+`;

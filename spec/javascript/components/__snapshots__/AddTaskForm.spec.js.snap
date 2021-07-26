@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot AddTaskForm snapshot 1`] = `
+<form
+  id="add-task-form"
+  onSubmit={[Function]}
+>
+  <div>
+    <input
+      id="title-input"
+      onChange={[Function]}
+      placeholder="Task Title"
+      required={true}
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <input
+      id="description-input"
+      onChange={[Function]}
+      placeholder="Task Description"
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <input
+      id="avatar-url-input"
+      onChange={[Function]}
+      placeholder="Avatar URL"
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <button
+      id="add-button"
+      type="submit"
+    >
+      Add
+    </button>
+  </div>
+</form>
+`;

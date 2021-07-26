@@ -8,3 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(document.createElement("div"))
   );
 });
+
+export default BaseRoute;

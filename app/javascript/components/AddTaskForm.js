@@ -19,9 +19,10 @@ function AddTaskForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form id="add-task-form" onSubmit={handleSubmit}>
       <div>
         <input
+          id="title-input"
           type="text"
           placeholder="Task Title"
           value={title}
@@ -31,6 +32,7 @@ function AddTaskForm() {
       </div>
       <div>
         <input
+          id="description-input"
           type="text"
           placeholder="Task Description"
           value={description}
@@ -39,6 +41,7 @@ function AddTaskForm() {
       </div>
       <div>
         <input
+          id="avatar-url-input"
           type="text"
           placeholder="Avatar URL"
           value={avatarUrl}
@@ -46,7 +49,9 @@ function AddTaskForm() {
         />
       </div>
       <div>
-        <button type="submit">Add</button>
+        <button id="add-button" type="submit">
+          Add
+        </button>
       </div>
     </form>
   );

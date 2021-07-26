@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot Dashboard snapshot 1`] = `
+<div
+  className="dashboard-container"
+>
+  <Header
+    title="Taskie"
+  />
+  <div
+    className="main"
+  >
+    <DefaultComponent />
+  </div>
+</div>
+`;

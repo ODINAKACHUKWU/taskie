@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot Header snapshot 1`] = `
+<div
+  className="header-container"
+>
+  <div
+    className="title"
+  >
+    Taskie
+  </div>
+  <div
+    className="action-button"
+  />
+</div>
+`;

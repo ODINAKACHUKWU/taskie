@@ -1,7 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Header({ title, action }) {
+const defaultProps = {
+  title: "Taskie",
+};
+
+function Header({ title = defaultProps.title, action }) {
   return (
     <div className="header-container">
       <div className="title">{title}</div>
